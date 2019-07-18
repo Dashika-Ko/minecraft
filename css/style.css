@@ -16,7 +16,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none;}
 body {
 	font-family: Arial;
 	background-color: #ffffff;
-	max-width: 1280px;
+	max-width: 100%;
 }
 .logo,.contact{
 	float:left;
@@ -85,31 +85,31 @@ div.logo_right {
 }
 .green_line_2 {
 	background: linear-gradient(to top, #3d9b50, #51c066);
-	height: 45px;
 }
-.logo_line li {
-	float: left;
-	margin-left: 48px;
-	margin-top: 10px;
-}
+
 .menu{
 	font-size: 0;
+	border-left: 1px solid #57e974;
+	border-right: 1px solid #247634;
 }
+
 .menu_item {
 	border-width: 1px;
-	border-color: #247634;
+	border-left-color: #247634;
+	border-right-color: #57e974;
 	border-style: solid;
 	border-top: none;
 	border-bottom: none;
 	width: 20%;
 	float: left;
-	/*display: inline-block;*/
 	box-sizing: border-box;
-
-}
-.menu_item a {
+	padding: 6px 0;
 	text-align: center;
-		font-size: 16px;
+}
+
+
+.menu_item a {
+	font-size: 16px;
 	color: #fff;
 	font-weight: bold;
 }
@@ -150,28 +150,10 @@ h3 {
 	font-weight: bold;
 	font-size: 14px;
 	color: #000;
+	margin-left: 9px;
 }
 .news_text li {
 	float: left;
-}
-
-.skreenshot {
-	margin-left: 18px;
-}
-.yellow_line {
-	background: linear-gradient(to top, #fec50d, #fdc60b, #fec50d);
-	height: 96px;
-	margin-top: 31px;
-	width: 1280px;
-}
-h4 {
-	font-size: 20px;
-	color: #fff;
-	font-weight: normal;
-}
-.contact_footer,a {
-	text-decoration: none;
-	color: #000;
 }
 .main_bar {
 	float: right;
@@ -183,14 +165,55 @@ h4 {
 	height: 91px;
 	line-height: 1.2em;
 }
+.skreenshot {
+	margin-left: 9px;
+}
+.yellow_line {
+	background: linear-gradient(to top, #fec50d, #fdc60b, #fec50d);
+	margin-top: 31px;
+	flex-basis: 1280px;
+}
+
+.yellow_line .resize {
+	display: flex;
+}
+
 .resize h4 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: normal;
 	white-space: nowrap;
 	width: 50%;
-	float:left;
+	flex: 2;
 }
+.contact_footer {
+	padding: 7px 0;
+	color: #000;
+	display: flex;
+}
+
+.contact_footer div.coll1 {
+	font-size: 16px;
+}
+.contact_footer div.coll2 {
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+
 .green_line_3 {
-	float: left;
 	height: 89px;
 	background: linear-gradient(to top, #3d9b50, #51c066);
-	width: 1280px;
+	flex-basis: 1280px;
+}
+
+ul.logo_footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.copyright {
+	color: #000;
+	font-size: 14px;
 }
